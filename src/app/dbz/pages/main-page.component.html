@@ -4,7 +4,7 @@
 
         <app-dbz-list
             [characterList]="dbzService.characters"
-            (onDelete)="dbzService.onDelete($event)"
+            (onDelete)="dbzService.deleteCharacterById($event)"
             >
         </app-dbz-list>
         
