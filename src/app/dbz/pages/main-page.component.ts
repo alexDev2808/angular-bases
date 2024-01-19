@@ -29,4 +29,8 @@ export class MainPageComponent {
       power: character.power
     });
   }
+
+  onDelete(index: number): void {
+    this.characters.splice(index, 1);
+  }
 }
