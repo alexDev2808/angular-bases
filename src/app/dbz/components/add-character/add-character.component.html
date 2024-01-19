@@ -1,6 +1,6 @@
 <h3 class="fw-semibold">Agregar personaje</h3>
 
-<form class="row">
+<form class="row" (ngSubmit)="emitCharacter()">
     
     <input [(ngModel)]="character.name" name="name" type="text" class="form-control mb-2" placeholder="Nombre">
     <input [(ngModel)]="character.power" name="power" type="number" class="form-control mb-2" placeholder="Poder">
